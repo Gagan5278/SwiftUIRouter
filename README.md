@@ -56,6 +56,6 @@
       @Published var path = NavigationPath()
       func popToRoot() {
         path = NavigationPath()
-     }
-  }
+     } }
+   
   ```
