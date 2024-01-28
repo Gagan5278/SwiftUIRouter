@@ -32,7 +32,6 @@
     ```
 
 2. Create an extension of View and add the below code
-
    ```extension View {
     @ViewBuilder
     func buildNextView(navDestination: AppRouter?) -> some View {
@@ -48,21 +47,18 @@
         default:
             EmptyView()
         }
-    }
-  }```
-
+    } }
+   ```
 
 3. Create a class name as NavigationStore which confirms the ObservableObject protocol. This class will help in navigation via NavigationStack
- ```
+   ```
 final class NavigationStore: ObservableObject {
     @Published var path = NavigationPath()
     
     func popToRoot() {
         path = NavigationPath()
     }
-    
-}
- ```
+}```
 
 protocol RootViewModelProtocol: ObservableObject {
     var appRouter: AppRouter? { get set }
