@@ -32,8 +32,8 @@
     ```
 
 2. Create an extension of View and add the below code
-   ```
-   extension View {
+
+   ```extension View {
     @ViewBuilder
     func buildNextView(navDestination: AppRouter?) -> some View {
         switch navDestination {
@@ -49,8 +49,9 @@
             EmptyView()
         }
     }
-  }
-   ```
+  }```
+
+
 3. Create a class name as NavigationStore which confirms the ObservableObject protocol. This class will help in navigation via NavigationStack
  ```
 final class NavigationStore: ObservableObject {
