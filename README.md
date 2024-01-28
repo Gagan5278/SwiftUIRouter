@@ -51,3 +51,11 @@
    ```
 
 3. Create a class name as NavigationStore which confirms the ObservableObject protocol. This class will help in navigation via NavigationStack
+   ```
+   final class NavigationStore: ObservableObject {
+      @Published var path = NavigationPath()
+      func popToRoot() {
+        path = NavigationPath()
+     }
+  }
+  ```
