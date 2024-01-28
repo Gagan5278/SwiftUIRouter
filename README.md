@@ -1,4 +1,4 @@
-## An Example with NavigationStack to create an App router in a unique and simple way.
+## An Example with NavigationStack to create an App router uniquely and simply.
 
 ### Setup
 1. create an enum name as 'AppRouter' which confirms the Hashable protocol. Define app navigation as cases inside the enum. Example:
