@@ -14,6 +14,17 @@
 		5D1A894B2B667827006499C2 /* SwiftUIRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A894A2B667827006499C2 /* SwiftUIRouterTests.swift */; };
 		5D1A89552B667827006499C2 /* SwiftUIRouterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A89542B667827006499C2 /* SwiftUIRouterUITests.swift */; };
 		5D1A89572B667827006499C2 /* SwiftUIRouterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A89562B667827006499C2 /* SwiftUIRouterUITestsLaunchTests.swift */; };
+		5D1A89672B66791B006499C2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A89662B66791B006499C2 /* AppRouter.swift */; };
+		5D1A896A2B6679AE006499C2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A89692B6679AE006499C2 /* LoginViewModel.swift */; };
+		5D1A896C2B6679DF006499C2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A896B2B6679DF006499C2 /* LoginView.swift */; };
+		5D1A896F2B667A3D006499C2 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A896E2B667A3D006499C2 /* RegistrationView.swift */; };
+		5D1A89712B667A48006499C2 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A89702B667A48006499C2 /* RegistrationViewModel.swift */; };
+		5D1A89742B667A9A006499C2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A89732B667A9A006499C2 /* ProfileViewModel.swift */; };
+		5D1A89762B667AC4006499C2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A89752B667AC4006499C2 /* ProfileView.swift */; };
+		5D1A89792B667BD2006499C2 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A89782B667BD2006499C2 /* RootViewModel.swift */; };
+		5D1A897B2B667BDD006499C2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A897A2B667BDD006499C2 /* RootView.swift */; };
+		5D1A897E2B667D29006499C2 /* View+Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A897D2B667D29006499C2 /* View+Extesion.swift */; };
+		5D1A89802B669212006499C2 /* NavigationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A897F2B669212006499C2 /* NavigationStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +56,17 @@
 		5D1A89502B667827006499C2 /* SwiftUIRouterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIRouterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1A89542B667827006499C2 /* SwiftUIRouterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRouterUITests.swift; sourceTree = "<group>"; };
 		5D1A89562B667827006499C2 /* SwiftUIRouterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRouterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D1A89662B66791B006499C2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		5D1A89692B6679AE006499C2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5D1A896B2B6679DF006499C2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5D1A896E2B667A3D006499C2 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		5D1A89702B667A48006499C2 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		5D1A89732B667A9A006499C2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		5D1A89752B667AC4006499C2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5D1A89782B667BD2006499C2 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		5D1A897A2B667BDD006499C2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		5D1A897D2B667D29006499C2 /* View+Extesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extesion.swift"; sourceTree = "<group>"; };
+		5D1A897F2B669212006499C2 /* NavigationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +117,10 @@
 		5D1A89372B667826006499C2 /* SwiftUIRouter */ = {
 			isa = PBXGroup;
 			children = (
-				5D1A89382B667826006499C2 /* SwiftUIRouterApp.swift */,
+				5D1A897C2B667D1B006499C2 /* Utility */,
+				5D1A89652B667911006499C2 /* Router */,
+				5D1A89642B6678BE006499C2 /* View */,
+				5D1A89632B6678AB006499C2 /* System */,
 				5D1A893A2B667826006499C2 /* ContentView.swift */,
 				5D1A893C2B667827006499C2 /* Assets.xcassets */,
 				5D1A893E2B667827006499C2 /* SwiftUIRouter.entitlements */,
@@ -127,6 +152,78 @@
 				5D1A89562B667827006499C2 /* SwiftUIRouterUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIRouterUITests;
+			sourceTree = "<group>";
+		};
+		5D1A89632B6678AB006499C2 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A89382B667826006499C2 /* SwiftUIRouterApp.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		5D1A89642B6678BE006499C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A89772B667BC3006499C2 /* Root */,
+				5D1A89722B667A8C006499C2 /* Profile */,
+				5D1A896D2B667A34006499C2 /* Registration */,
+				5D1A89682B6679A2006499C2 /* Login */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D1A89652B667911006499C2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A89662B66791B006499C2 /* AppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5D1A89682B6679A2006499C2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A89692B6679AE006499C2 /* LoginViewModel.swift */,
+				5D1A896B2B6679DF006499C2 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5D1A896D2B667A34006499C2 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A896E2B667A3D006499C2 /* RegistrationView.swift */,
+				5D1A89702B667A48006499C2 /* RegistrationViewModel.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		5D1A89722B667A8C006499C2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A89732B667A9A006499C2 /* ProfileViewModel.swift */,
+				5D1A89752B667AC4006499C2 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5D1A89772B667BC3006499C2 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A89782B667BD2006499C2 /* RootViewModel.swift */,
+				5D1A897A2B667BDD006499C2 /* RootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5D1A897C2B667D1B006499C2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A897D2B667D29006499C2 /* View+Extesion.swift */,
+				5D1A897F2B669212006499C2 /* NavigationStore.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1A89792B667BD2006499C2 /* RootViewModel.swift in Sources */,
+				5D1A896A2B6679AE006499C2 /* LoginViewModel.swift in Sources */,
+				5D1A89802B669212006499C2 /* NavigationStore.swift in Sources */,
+				5D1A89762B667AC4006499C2 /* ProfileView.swift in Sources */,
+				5D1A897E2B667D29006499C2 /* View+Extesion.swift in Sources */,
 				5D1A893B2B667826006499C2 /* ContentView.swift in Sources */,
 				5D1A89392B667826006499C2 /* SwiftUIRouterApp.swift in Sources */,
+				5D1A89712B667A48006499C2 /* RegistrationViewModel.swift in Sources */,
+				5D1A896F2B667A3D006499C2 /* RegistrationView.swift in Sources */,
+				5D1A896C2B6679DF006499C2 /* LoginView.swift in Sources */,
+				5D1A89742B667A9A006499C2 /* ProfileViewModel.swift in Sources */,
+				5D1A89672B66791B006499C2 /* AppRouter.swift in Sources */,
+				5D1A897B2B667BDD006499C2 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

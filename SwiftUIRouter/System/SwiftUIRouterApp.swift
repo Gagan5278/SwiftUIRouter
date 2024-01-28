@@ -12,6 +12,7 @@ struct SwiftUIRouterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(NavigationStore())
         }
     }
 }
