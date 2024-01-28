@@ -89,5 +89,6 @@
    func navigateRegistration() {
         appRouter = .registration(RegistrationViewModel())
    }
- }
+   }
 ```
+4. Now in your View
