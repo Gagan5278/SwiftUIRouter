@@ -27,8 +27,9 @@
         }
         //
         hasher.combine(index)
+     }
     }
-} ```
+    ```
 
 2. Create an extension of View and add the below code
    ```
@@ -52,11 +53,14 @@
    ```
 3. Create a class name as NavigationStore which confirms the ObservableObject protocol. This class will help in navigation via NavigationStack
  ```
-     @Published var path = NavigationPath()
+final class NavigationStore: ObservableObject {
+    @Published var path = NavigationPath()
     
     func popToRoot() {
         path = NavigationPath()
     }
+    
+}
  ```
 
 protocol RootViewModelProtocol: ObservableObject {
@@ -96,6 +100,7 @@ class RootViewModel: RootViewModelProtocol {
 }
 
 Now in your view
+
 struct RootView<ViewModel: RootViewModelProtocol>: View {
     @EnvironmentObject var navigationStore: NavigationStore
     @ObservedObject var viewModel: ViewModel
@@ -113,7 +118,4 @@ struct RootView<ViewModel: RootViewModelProtocol>: View {
           }
     }
 }
-````
-
-Thats it Have Fun 
 
