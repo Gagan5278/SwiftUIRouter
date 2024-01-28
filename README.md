@@ -57,6 +57,4 @@
       func popToRoot() {
         path = NavigationPath()
      }
-  }
-   ```
-
+  }```
