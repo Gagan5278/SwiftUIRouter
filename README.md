@@ -12,7 +12,7 @@
     static func == (lhs: AppRouter, rhs: AppRouter) -> Bool {
         lhs.hashValue == rhs.hashValue
     }
-    
+   
     func hash(into hasher: inout Hasher) {
         var index = 0
         switch self {
@@ -67,10 +67,9 @@
     var navigationTitle: String { get }
     func navigateToLogin()
     func navigateRegistration()
-
-}
-
-class RootViewModel: RootViewModelProtocol {
+   }
+   
+   class RootViewModel: RootViewModelProtocol {
     @Published var appRouter: AppRouter? = nil
     private lazy var loginViewModel = LoginViewModel()
     private lazy var registrationViewModel = RegistrationViewModel()
@@ -78,21 +77,17 @@ class RootViewModel: RootViewModelProtocol {
     var navigateToLoginTitle: String {
         "Login"
     }
-
-    var navigateToRegistartionTitle: String {
+   var navigateToRegistartionTitle: String {
         "Register"
-    }
-    
-    var navigationTitle: String {
+   }
+   var navigationTitle: String {
         "Router Example"
-    }
-    
-    func navigateToLogin() {
+   }
+   func navigateToLogin() {
         appRouter = .login(LoginViewModel())
-    }
-    
-    func navigateRegistration() {
+   }
+   func navigateRegistration() {
         appRouter = .registration(RegistrationViewModel())
-    }
-}
+   }
+ }
 ```
