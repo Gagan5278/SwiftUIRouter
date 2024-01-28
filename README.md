@@ -1,7 +1,7 @@
-## An Example with NavigationStack to create App router with a unique and simple way.
+## An Example with NavigationStack to create an App router in a unique and simple way.
 
 ### Setup
-1. create an enum name as 'AppRouter' which confirm Hashable protocol. Define app navigation as cases inside enum. Example:
+1. create an enum name as 'AppRouter' which confirms the Hashable protocol. Define app navigation as cases inside the enum. Example:
    ```
    enum AppRouter: Hashable {
     case login(LoginViewModel)
@@ -30,7 +30,7 @@
     }
 } ```
 
-2. Create an extesion of View and add below code
+2. Create an extension of View and add the below code
    ```
    extension View {
     @ViewBuilder
@@ -50,7 +50,7 @@
     }
   }
    ```
-3. Create a class name as NavigationStore which confirm ObservableObject protcol. This class will help in navigation via NavigationStack
+3. Create a class name as NavigationStore which confirms the ObservableObject protocol. This class will help in navigation via NavigationStack
  ```
      @Published var path = NavigationPath()
     
@@ -59,9 +59,6 @@
     }
  ```
 
-### How To use
-#### Create a ViewModel as below
-```
 protocol RootViewModelProtocol: ObservableObject {
     var appRouter: AppRouter? { get set }
     var navigateToLoginTitle: String { get }
@@ -98,9 +95,7 @@ class RootViewModel: RootViewModelProtocol {
     }
 }
 
-```
 Now in your view
-```
 struct RootView<ViewModel: RootViewModelProtocol>: View {
     @EnvironmentObject var navigationStore: NavigationStore
     @ObservedObject var viewModel: ViewModel
