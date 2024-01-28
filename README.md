@@ -91,5 +91,3 @@
     }
    }
 ```
-
-Now in your View
