@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RootView<ViewModel: RootViewModelProtocol>: View {
-    @EnvironmentObject var navigationStore: NavigationStore
     @ObservedObject var viewModel: ViewModel
     var body: some View {
           VStack {
@@ -19,8 +18,6 @@ struct RootView<ViewModel: RootViewModelProtocol>: View {
           .navigationTitle(viewModel.navigationTitle)
           .navigationDestination(item: $viewModel.appRouter) { _ in
               buildNextView(navDestination: viewModel.appRouter)
-                  .environmentObject(navigationStore)
-
           }
     }
 }
