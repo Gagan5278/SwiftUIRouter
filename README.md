@@ -77,18 +77,18 @@
     var navigateToLoginTitle: String {
         "Login"
     }
-   var navigateToRegistartionTitle: String {
+    var navigateToRegistartionTitle: String {
         "Register"
-   }
-   var navigationTitle: String {
+    }
+    var navigationTitle: String {
         "Router Example"
-   }
-   func navigateToLogin() {
+    }
+    func navigateToLogin() {
         appRouter = .login(LoginViewModel())
-   }
-   func navigateRegistration() {
+    }
+    func navigateRegistration() {
         appRouter = .registration(RegistrationViewModel())
-   }
+    }
    }
 ```
 
