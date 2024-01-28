@@ -58,9 +58,5 @@
         path = NavigationPath()
      }
   }
-```
-
-
-
-
+   ```
 
