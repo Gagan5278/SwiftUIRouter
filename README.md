@@ -52,67 +52,15 @@
 
 3. Create a class name as NavigationStore which confirms the ObservableObject protocol. This class will help in navigation via NavigationStack
    ```
-final class NavigationStore: ObservableObject {
-    @Published var path = NavigationPath()
-    
-    func popToRoot() {
+   final class NavigationStore: ObservableObject {
+      @Published var path = NavigationPath()
+      func popToRoot() {
         path = NavigationPath()
-    }
-}```
+     }
+  }
+```
 
-protocol RootViewModelProtocol: ObservableObject {
-    var appRouter: AppRouter? { get set }
-    var navigateToLoginTitle: String { get }
-    var navigateToRegistartionTitle: String { get }
-    var navigationTitle: String { get }
-    func navigateToLogin()
-    func navigateRegistration()
 
-}
 
-class RootViewModel: RootViewModelProtocol {
-    @Published var appRouter: AppRouter? = nil
-    private lazy var loginViewModel = LoginViewModel()
-    private lazy var registrationViewModel = RegistrationViewModel()
-    
-    var navigateToLoginTitle: String {
-        "Login"
-    }
 
-    var navigateToRegistartionTitle: String {
-        "Register"
-    }
-    
-    var navigationTitle: String {
-        "Router Example"
-    }
-    
-    func navigateToLogin() {
-        appRouter = .login(LoginViewModel())
-    }
-    
-    func navigateRegistration() {
-        appRouter = .registration(RegistrationViewModel())
-    }
-}
-
-Now in your view
-
-struct RootView<ViewModel: RootViewModelProtocol>: View {
-    @EnvironmentObject var navigationStore: NavigationStore
-    @ObservedObject var viewModel: ViewModel
-    var body: some View {
-          VStack {
-             createButtonWithTitle(title: viewModel.navigateToLoginTitle, action: viewModel.navigateToLogin)
-            
-             createButtonWithTitle(title: viewModel.navigateToRegistartionTitle, action: viewModel.navigateRegistration)
-          }
-          .navigationTitle(viewModel.navigationTitle)
-          .navigationDestination(item: $viewModel.appRouter) { _ in
-              buildNextView(navDestination: viewModel.appRouter)
-                  .environmentObject(navigationStore)
-
-          }
-    }
-}
 
