@@ -14,11 +14,17 @@ struct RootView<ViewModel: RootViewModelProtocol>: View {
              createButtonWithTitle(title: viewModel.navigateToLoginTitle, action: viewModel.navigateToLogin)
             
              createButtonWithTitle(title: viewModel.navigateToRegistartionTitle, action: viewModel.navigateRegistration)
+              
+              createButtonWithTitle(title: "Present Sheet", action: viewModel.shouldPresentView)
+
           }
           .navigationTitle(viewModel.navigationTitle)
-          .navigationDestination(item: $viewModel.appRouter) { _ in
+          .navigationDestination(item: $viewModel.appRouter) { to in
               buildNextView(navDestination: viewModel.appRouter)
           }
+          .sheet(isPresented: $viewModel.shouldPresentSheet, content: {
+              buildNextView(navDestination: viewModel.sheetPresenter)
+          })
     }
 }
 
